@@ -103,6 +103,8 @@
     padding: 1.875rem 1.25rem;
 
     color: $title-color;
+    background: $bg-color-white;
+    box-shadow: 10px 10px 30px rgba(1, 163, 164, 0.15);
 
     &:hover,
     &:focus {

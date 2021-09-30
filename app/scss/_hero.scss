@@ -1,3 +1,194 @@
-.title > span {
-    color: red;
+.hero {
+    height: 58.75rem;
+}
+.hero.wrapper {
+    position: relative;
+    padding-top: 4.375rem;
+    overflow: hidden;
+    background-image: $hero-bg-gradient;
+}
+
+.hero__title {
+    font-family: $BebasNeue;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $title-color;
+}
+.hero__sub-title {
+    width: 30.625rem;
+    font-family: $Galada;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 1.23;
+    margin-left: auto;
+    margin-right: 2.25rem;
+
+    color: $bg-color-white;
+}
+
+.hero__sub-title span {
+    margin-left: 10.0625rem;
+}
+
+.hero__box {
+    position: absolute;
+    bottom: 4.9375rem;
+    left: 30.6875rem;
+}
+.hero__pang-1 {
+    position: absolute;
+    top: 24.1875rem;
+    left: 0;
+    z-index: 1;
+}
+.hero__semi-transparent--ellipse-1 {
+    position: absolute;
+    top: 23.4375rem;
+    left: 3.125rem;
+}
+.hero__semi-transparent--ellipse-2 {
+    position: absolute;
+    top: 23.4375rem;
+    left: 20.625rem;
+}
+.hero__pang-2 {
+    position: absolute;
+    top: 16.375rem;
+    left: 9.625rem;
+    z-index: 1;
+}
+.hero__line-up-sm {
+    position: absolute;
+    top: 21.375rem;
+    left: 31.9375rem;
+}
+.hero__line-up-md {
+    position: absolute;
+    top: 29.8125rem;
+    left: 10.9375rem;
+}
+.hero__elp-1 {
+    position: absolute;
+    top: 16.9375rem;
+    left: 17.75rem;
+}
+.hero__elp-2 {
+    position: absolute;
+    top: 36.3125rem;
+    left: 5.4375rem;
+}
+.hero__elp-3 {
+    position: absolute;
+    top: 23.0625rem;
+    left: 6.125rem;
+}
+.hero__semi-transparent--ellipse-3 {
+    position: absolute;
+    top: 23.4375rem;
+    left: 101.25rem;
+}
+.hero__semi-transparent--ellipse-4 {
+    position: absolute;
+    top: 23.4375rem;
+    left: 83.75rem;
+}
+.hero__bag {
+    position: absolute;
+    top: 16.4375rem;
+    right: 7.125rem;
+}
+.hero__bank {
+    position: absolute;
+    top: 21rem;
+    right: -1.125rem;
+}
+.hero__elp-4 {
+    position: absolute;
+    top: 19.625rem;
+    right: 16.375rem;
+}
+.hero__elp-5 {
+    position: absolute;
+    top: 34.875rem;
+    right: 13.625rem;
+}
+.hero__elp-6 {
+    position: absolute;
+    top: 20.5625rem;
+    right: 1.625rem;
+}
+
+.hero__line-down-sm {
+    position: absolute;
+    top: 38.4375rem;
+    right: 26.6875rem;
+}
+.hero__line-down-md {
+    position: absolute;
+    right: 7.5rem;
+    bottom: 0.0625rem;
+}
+.hero__btn {
+    position: absolute;
+    bottom: 4.375rem;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $BebasNeue;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 1.8125rem;
+    line-height: 1.8125rem;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3.125rem;
+    border: transparent;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-right: 5.625rem;
+    padding-left: 5.625rem;
+
+    color: $bg-color-white;
+    background-color: $accent-color;
+    transition: color 250ms $time-distribution-function, background-color 250ms $time-distribution-function,
+        border-color 250ms $time-distribution-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        background-color: $bg-color-white;
+    }
+}
+.hero__text {
+    position: absolute;
+    bottom: 6.25rem;
+    left: 21.875rem;
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: $bg-color-white;
+
+    transform: rotate(-90deg);
+
+    &::after {
+        position: absolute;
+        bottom: -0.9375rem;
+        left: -3rem;
+        content: '';
+        width: 0.125rem;
+        height: 3.125rem;
+        background-color: $bg-color-white;
+        transform: rotate(-90deg);
+    }
 }
