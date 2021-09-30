@@ -1,14 +1,6 @@
 html {
+    font-size: 16px;
     box-sizing: border-box;
-}
-
-//? щоб сторінка не прокручувувалася коли відкрита модалка + Js
-// body.modal-open {
-//     overflow: hidden;
-// }
-
-body {
-    font-family: sans-serif;
 }
 
 h1,
@@ -62,8 +54,15 @@ button {
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 75rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper {
+    max-width: 120rem;
     margin-right: auto;
     margin-left: auto;
 }

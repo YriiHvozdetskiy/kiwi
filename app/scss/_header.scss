@@ -1,0 +1,111 @@
+.header__nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50.9375rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__btn-burger {
+    display: none;
+}
+
+.header__wrapper {
+    display: none;
+}
+.header__menu {
+    display: flex;
+}
+
+.menu__item:not(:nth-last-child(1)) {
+    margin-right: 6.25rem;
+}
+
+.menu__item:nth-child(2) {
+    margin-right: 24.375rem;
+}
+
+.menu__link {
+    position: relative;
+    font-family: $BebasNeue;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05em;
+    padding-top: 3.625rem;
+    padding-bottom: 2.375rem;
+    color: $title-color;
+
+    transition: 250ms $time-distribution-function;
+
+    &::after {
+        position: absolute;
+        bottom: 1.9375rem;
+        left: 0;
+
+        content: '';
+        height: 0.25rem;
+        width: 100%;
+
+        opacity: 0;
+        background: $accent-color;
+        transition: 250ms $time-distribution-function;
+    }
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.menu__item--drop-down-menu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    left: -1.25rem;
+    top: -3.75rem;
+    width: 11.4375rem;
+
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 250ms $time-distribution-function;
+
+    &:hover {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+}
+
+.sub-menu__link {
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    padding: 1.875rem 1.25rem;
+
+    color: $title-color;
+
+    &:hover,
+    &:focus {
+        background-color: $header-mob-menu-bg;
+    }
+}
