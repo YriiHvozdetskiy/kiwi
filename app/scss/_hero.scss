@@ -7,7 +7,10 @@
     overflow: hidden;
     background-image: $hero-bg-gradient;
 }
-
+// 1920, 1680, 1440, 1366, 1280, 1024.
+// Таблет: 768.
+// Мобайл: 666.
+// На телефонах від 320 до 666 має бути один медіа запрос.
 .hero__title {
     font-family: $BebasNeue;
     font-weight: 700;
@@ -18,6 +21,16 @@
     text-transform: uppercase;
 
     color: $title-color;
+
+    @media screen and (max-width: 1680px) {
+        font-size: 5rem;
+        line-height: 4.3rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 4rem;
+        line-height: 3.3rem;
+    }
 }
 .hero__sub-title {
     width: 30.625rem;
@@ -29,6 +42,15 @@
     margin-right: 2.25rem;
 
     color: $bg-color-white;
+
+    @media screen and (max-width: 1680px) {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 3.3rem;
+    }
 }
 
 .hero__sub-title span {
@@ -39,38 +61,85 @@
     position: absolute;
     bottom: 4.9375rem;
     left: 30.6875rem;
+
+    @media screen and (max-width: 1628px) {
+        left: 20.688rem;
+    }
+
+    @media screen and (max-width: 1461px) {
+        left: 15.688rem;
+    }
+
+    @media screen and (max-width: 1365px) {
+        width: 46.875rem;
+        bottom: 7.938rem;
+        left: 18.688rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        left: 13.688rem;
+    }
 }
 .hero__pang-1 {
     position: absolute;
     top: 24.1875rem;
     left: 0;
     z-index: 1;
+
+    @media screen and (max-width: 1365px) {
+        left: 6.25rem;
+        width: 12.5rem;
+    }
 }
 .hero__semi-transparent--ellipse-1 {
     position: absolute;
     top: 23.4375rem;
     left: 3.125rem;
+
+    @media screen and (max-width: 1461px) {
+        width: 6.875rem;
+    }
+
+    @media screen and (max-width: 1365px) {
+        display: none;
+    }
 }
 .hero__semi-transparent--ellipse-2 {
     position: absolute;
     top: 23.4375rem;
     left: 20.625rem;
+
+    @media screen and (max-width: 1628px) {
+        display: none;
+    }
 }
 .hero__pang-2 {
     position: absolute;
     top: 16.375rem;
     left: 9.625rem;
     z-index: 1;
+
+    @media screen and (max-width: 1628px) {
+        display: none;
+    }
 }
 .hero__line-up-sm {
     position: absolute;
     top: 21.375rem;
     left: 31.9375rem;
+
+    @media screen and (max-width: 1628px) {
+        display: none;
+    }
 }
 .hero__line-up-md {
     position: absolute;
     top: 29.8125rem;
     left: 10.9375rem;
+
+    @media screen and (max-width: 1628px) {
+        display: none;
+    }
 }
 .hero__elp-1 {
     position: absolute;
@@ -81,6 +150,10 @@
     position: absolute;
     top: 36.3125rem;
     left: 5.4375rem;
+
+    @media screen and (max-width: 1200px) {
+        left: 58.438rem;
+    }
 }
 .hero__elp-3 {
     position: absolute;
@@ -96,42 +169,73 @@
     position: absolute;
     top: 23.4375rem;
     left: 83.75rem;
+
+    @media screen and (max-width: 1365px) {
+        display: none;
+    }
 }
 .hero__bag {
     position: absolute;
     top: 16.4375rem;
     right: 7.125rem;
+
+    @media screen and (max-width: 1850px) {
+        display: none;
+    }
 }
 .hero__bank {
     position: absolute;
     top: 21rem;
     right: -1.125rem;
+
+    @media screen and (max-width: 1365px) {
+        width: 12.5rem;
+    }
 }
 .hero__elp-4 {
     position: absolute;
     top: 19.625rem;
     right: 16.375rem;
+
+    @media screen and (max-width: 1628px) {
+        display: none;
+    }
 }
 .hero__elp-5 {
     position: absolute;
     top: 34.875rem;
     right: 13.625rem;
+
+    @media screen and (max-width: 1365px) {
+        display: none;
+    }
 }
 .hero__elp-6 {
     position: absolute;
     top: 20.5625rem;
     right: 1.625rem;
+
+    @media screen and (max-width: 1365px) {
+        display: none;
+    }
 }
 
 .hero__line-down-sm {
     position: absolute;
     top: 38.4375rem;
     right: 26.6875rem;
+    @media screen and (max-width: 1850px) {
+        display: none;
+    }
 }
 .hero__line-down-md {
     position: absolute;
     right: 7.5rem;
     bottom: 0.0625rem;
+
+    @media screen and (max-width: 1850px) {
+        display: none;
+    }
 }
 .hero__btn {
     position: absolute;
@@ -166,6 +270,15 @@
         color: $accent-color;
         background-color: $bg-color-white;
     }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 1.5rem;
+        line-height: 1.35rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 3.625rem;
+        padding-left: 3.625rem;
+    }
 }
 .hero__text {
     position: absolute;
@@ -181,6 +294,12 @@
 
     transform: rotate(-90deg);
 
+    @media screen and (max-width: 1200px) {
+        bottom: 5.25rem;
+        left: 6.875rem;
+        font-size: 0.65rem;
+    }
+
     &::after {
         position: absolute;
         bottom: -0.9375rem;
@@ -190,5 +309,11 @@
         height: 3.125rem;
         background-color: $bg-color-white;
         transform: rotate(-90deg);
+
+        @media screen and (max-width: 1200px) {
+            bottom: -0.59rem;
+            width: 0.1rem;
+            height: 2.125rem;
+        }
     }
 }
